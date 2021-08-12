@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 2%;
+  background-color: white;
+  align-content: center;
+  height: 100%;
+}
+
+.fullHeader{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#icon{
+  margin: auto;
+}
+
+#downwardArrow{
+  color: black;
+  font-size: 2rem;
+}
+
+.textHolder{
+  margin: auto;
+  text-align: left;
+}
+
+.textHolder h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  padding: 1%;
+}
+
+.textHolder p{
+  font-family: 'Roboto', sans-serif;
+}
+
+#mapOverlay{
+  transition: all ease 1s;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  pointer-events: none;
+  background-size: cover;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+}
+
+#donateNow{
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  padding: 3%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#donateNow:active{
+  background-color: rgb(73, 73, 73);
+}
+
+#icon{
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .textHolder h1{
+    font-size: 2rem;
+  }
+
+  .textHolder p{
+  font-size: 0.9rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  #mapOverlay{
+    width: 100%;
+    height: auto;
+  }
+
+  .textHolder{
+    text-align: center;
+}
+}

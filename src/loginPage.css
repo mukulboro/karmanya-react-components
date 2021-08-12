@@ -1,16 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
+body,
+html {
+  height: 100%;
+}
 
-body, html{height: 100%;}
-
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #98d9f0;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, #98d9f0 20%, #98d9f0 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #98d9f0 20%, #98d9f0 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#78a23f 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #78a23f 0.8px, #98d9f0 0.8px) -0.4px 0;
-    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #98d9f0;
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #98d9f0 20%,
+      #98d9f0 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #98d9f0 20%,
+        #98d9f0 80%,
+        transparent 80%,
+        transparent
+      )
+      10px 10px,
+    linear-gradient(#78a23f 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, #78a23f 0.8px, #98d9f0 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
 .container {
@@ -20,167 +40,162 @@ body{
   height: 100vh;
 }
 
-.mainBox{
-    background-color: rgb(11, 148, 207, 0.7);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    width: 90vw;
-    border-radius: 30px;
+.mainBox {
+  background-color: rgb(11, 148, 207, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 90vw;
+  border-radius: 30px;
 }
 
-#leftDiv{
-    transition: 1s;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    height: 100%;
-    
+#leftDiv {
+  transition: 1s;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 100%;
 }
 
-.leftDivContent{
-    margin: 10%;
+.leftDivContent {
+  margin: 10%;
 }
 
-#loginArt{
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 10px;
-    pointer-events: none;
-    margin: 0;
-    padding: 0;
+#loginArt {
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 10px;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
 }
 
-#rightDiv{
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    height: 100%;
-    width: 100%;
-    background-color: white;
+#rightDiv {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
-.rightDivContent{
-    margin: 10%;
-    padding-top: 10%;
+.rightDivContent {
+  margin: 10%;
+  padding-top: 10%;
 }
 
-#logo{
-    transition: 1s;
-    height: 5rem;
-    pointer-events: none;
-
+#logo {
+  transition: 1s;
+  height: 5rem;
+  pointer-events: none;
 }
 
-.loginTitle{
-    font-family: 'Roboto', sans-serif;
-    font-size: 5rem;
+.loginTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
 }
 
-.quote{
-    font-family: 'Playfair Display', serif;
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-    color: white;
-    position: re;
-    bottom: 0;
+.quote {
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  position: re;
+  bottom: 0;
 }
 
-label{
-    font-family: 'Roboto', sans-serif;
-
+label {
+  font-family: "Roboto", sans-serif;
 }
 
-form{
-    margin-top: 10%;
-    width: 100%;
+form {
+  margin-top: 10%;
+  width: 100%;
 }
 
-input{
-    transition: 1s;
-    width: 80%;
-    margin: 3% 0;
-    height: 2rem;
-    border-radius: 10px;
-    border-color: rgb(109, 109, 109);
-    border-style: solid;
-    border-width: 1px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    padding: 1%;
+input {
+  transition: 1s;
+  width: 80%;
+  margin: 3% auto;
+  height: 2rem;
+  border-radius: 10px;
+  border-color: rgb(109, 109, 109);
+  border-style: solid;
+  border-width: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 1%;
 }
 
-input:focus{
-    transition: 1s;
-    outline: none;
-    border-color: #0b94cf;
-    height: 2.2rem;
-    filter: drop-shadow(1px 1px 2px #0b94cf);
-    font-size: 1.7rem;
+input:focus {
+  transition: 1s;
+  outline: none;
+  border-color: #0b94cf;
+  height: 2.2rem;
+  filter: drop-shadow(1px 1px 2px #0b94cf);
+  font-size: 1.7rem;
 }
 
-.submit{
-    width: 82%;
-    margin: 0 auto;
-    background-color: #78a23f;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    color: seashell;
-    height: 2.2rem;
-    font-size: 1.8rem;
-    letter-spacing: 3px;
-
+.submit {
+  width: 82%;
+  margin: 0 auto;
+  background-color: #78a23f;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  color: seashell;
+  height: 2.2rem;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
 }
 
-.submit:active{
-    background-color: #a3c574;
-
+.submit:active {
+  background-color: #a3c574;
 }
 
-@media only screen and (max-width: 500px ){
-    #loginArt{
-        display: none;
-    }
+@media only screen and (max-width: 500px) {
+  #loginArt {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .mainBox{
-        flex-direction: column;
-    }
+  .mainBox {
+    flex-direction: column;
+  }
 
-    .logo{
+  .logo {
     display: flex;
     flex-direction: column;
-    }
-    
-    #logo{
-        margin: 0 auto;
-    }
+  }
 
-    #leftDiv{
+  #logo {
+    margin: 0 auto;
+  }
+
+  #leftDiv {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 0px;
     height: 20%;
-    }
+  }
 
-    #rightDiv{
+  #rightDiv {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
-    }
+  }
 
-    #loginArt{
-        display: none;
-    }
+  #loginArt {
+    display: none;
+  }
 
-    .quote{
-        display: none;
-    }
+  .quote {
+    display: none;
+  }
 
-    .loginTitle{
-        font-size: 2rem;
-    }
+  .loginTitle {
+    font-size: 2rem;
+  }
 }

@@ -6,14 +6,24 @@ import qs from 'qs'
 
 export const LoginPage = ()=>{
     
-    const apiURL = "https://karmanya.herokuapp.com/"
+    const apiURL = "https://karmanya.herokuapp.com"
     const [userName, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = async(e)=>{
         e.preventDefault();
-        let response = axios.post(`${apiURL}/login`, qs.stringify({username: userName, password}))
-        console.log(response);
+        const {data} = await axios.post(`${apiURL}/login`, qs.stringify({username: userName, password}))
+        if(data.isUserAuthorized){
+            let sessionID = new Date().getTime().toString()
+            window.sessionStorage.setItem("userSession", sessionID)
+            // TODO: Route to Admin Panel if "userSession exists in sessionStorage"
+        }else{
+            setUsername("")
+            setPassword("")
+            alert(`Can't Login: ${data.error} `)
+        }
+
+        
     }
     return <>
     <div className="container">

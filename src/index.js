@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './loginPage.css';
-import App from './LoginPage';
+import './editor.css';
+import App from './CreateWork';
 
 
 ReactDOM.render(

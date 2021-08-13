@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./AdminComponents/adminComponents.css"
-import App from './AdminComponents/AdminPortfolio';
+import App from './AdminComponents/AdminBlog';
+import './AdminDash&FancyButton/fancyButton.css'
 
 
 

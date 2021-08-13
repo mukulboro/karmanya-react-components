@@ -11,6 +11,7 @@
     letter-spacing: 2px;
     padding: 2%;
     border-radius: 40px;
+    height: fit-content;
 }
 
 .fancyButton:hover{

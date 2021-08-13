@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './editor.css';
-import App from './CreateWork';
+import "./AdminComponents/adminComponents.css"
+import App from './AdminComponents/AdminPortfolio';
+
 
 
 ReactDOM.render(

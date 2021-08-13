@@ -1,7 +1,7 @@
-import nepalMap from "./images/nepalMap.png"
-import headerImage1 from "./images/headerImage1.jpg"
-import headerImage2 from "./images/headerImage2.jpg"
-import headerImage3 from "./images/headerImage3.jpg"
+import nepalMap from "../images/nepalMap.png"
+import headerImage1 from "../images/headerImage1.jpg"
+import headerImage2 from "../images/headerImage2.jpg"
+import headerImage3 from "../images/headerImage3.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleDown} from '@fortawesome/free-solid-svg-icons'
 

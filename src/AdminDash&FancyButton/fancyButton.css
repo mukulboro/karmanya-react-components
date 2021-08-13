@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.fancyButton{
+    transition: 1s;
+    background-color: coral ;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 2%;
+    border-radius: 40px;
+}
+
+.fancyButton:hover{
+    transition: 1s;
+    width: 60%;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .fancyButton{
+        font-size: 100%;
+    }
+}

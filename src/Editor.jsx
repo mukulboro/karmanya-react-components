@@ -1,8 +1,12 @@
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-import DocumentEditor from '@ckeditor/ckeditor5-build-classic';
+import MyEditor from 'ckeditor5-custom-build/build/ckeditor';
 import { useState } from 'react';
 import axios from 'axios';
 import qs from 'qs'
+
+const editorConfiguration = {
+    toolbar: ['heading', "|" , 'bold', 'italic', 'underline' , 'alignment', 'link', "|" ,'undo', 'redo', 'numberedList', 'bulletedList', "|" , 'blockQuote' , 'insertTable' ]
+};
 
 export const Editor =({endpoint})=>{
     
@@ -35,8 +39,8 @@ export const Editor =({endpoint})=>{
             <input type="text" placeholder="Image Link" value={postImage} onChange={(e)=>setPostImage(e.target.value)} required/>
             <section id="textbox">
                 <CKEditor
-                editor={ DocumentEditor }
-                height = "100%"
+                editor={ MyEditor }
+                config={ editorConfiguration }
                 data= {postBody}
                 onChange={ ( event, editor ) => {
                     const data = editor.getData();

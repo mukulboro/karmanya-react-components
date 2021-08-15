@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #5CDB94;
+}
+
+#mainHolder{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+h1{
+    font-family: 'Roboto', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: #063869;
+}
+
+.blogCard{
+    transition: 1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3%;
+    margin: 2% auto;
+    width: 80%;
+    box-shadow: 10px 10px rgb(41, 188, 105, 0.7);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.blogCard:hover{
+    transition: 1s;
+    box-shadow: none;
+    width: 85%;
+}
+
+.blogCard h1 {
+    font-family: 'Roboto', 'sans-serif';
+    color: white;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.blogCard p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .blogCard h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .blogCard p {
+        text-align: center;
+    }
+}

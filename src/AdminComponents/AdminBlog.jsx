@@ -1,5 +1,6 @@
 import FancyButton from '../AdminDash&FancyButton/FancyButton'
 import TableGenerator from './TableGenerator';
+import '../AdminDash&FancyButton/fancyButton.css'
 
 export const AdminBlog = ()=>{
        

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './AdminComponents/adminComponents.css'
-import App from './AdminComponents/AdminBlog';
+import './ContactUs/contactUs.css'
+import App from './ContactUs/ContactUs';
 
 
 ReactDOM.render(

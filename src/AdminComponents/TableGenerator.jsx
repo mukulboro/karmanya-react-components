@@ -16,7 +16,7 @@ export const TableGenerator = ({endPoint})=>{
      useEffect(()=>{
         const getData = async ()=>{
             const {data} = await axios.get(apiURL);
-            setPostData(data);
+            setPostData(data.reverse());
             setLoading(false);
         }
         getData();

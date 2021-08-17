@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './AboutUs/aboutUs.css'
-import App from './AboutUs/AboutUs';
+import './Header/header.css'
+import App from './Header/Header'
 
 
 ReactDOM.render(

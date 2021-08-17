@@ -8,7 +8,7 @@ export const MainBlogPage = () => {
     const getData = async ()=>{
         const response = await axios.get('https://karmanya.herokuapp.com/blog');
         const { data } = await response;
-        setPostData(data);
+        setPostData(data.reverse());
         setLoading(false)
         }
     

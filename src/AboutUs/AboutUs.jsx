@@ -9,6 +9,14 @@ export const AboutUs = () => {
     return <>
     <h1>About Us</h1>
     <HeadSlider/>
+
+    <section id="content">
+        <h2>Who are we?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur saepe possimus! Aperiam rem voluptatem nulla excepturi esse molestiae tenetur quam est ullam. Debitis dolor magni illum esse magnam, deleniti repellat veritatis provident amet? Fuga, cum repellendus adipisci nemo cupiditate provident laudantium similique veniam, in quia tenetur repellat ipsam expedita.</p>
+
+        <h2>What do we do?</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis optio cupiditate iusto aliquid aliquam totam. Porro illo nam explicabo eligendi laudantium necessitatibus et, amet officiis assumenda inventore voluptas, ad cupiditate pariatur, aliquam quis autem nobis sint deserunt. In atque reiciendis minus voluptatibus ducimus, voluptatum natus pariatur corrupti eos fugit nostrum, exercitationem, minima veniam qui ea? Minus nobis, perspiciatis delectus laboriosam, assumenda ab molestiae, totam accusamus odio facere quidem repellendus cumque?  </p>
+    </section>
     </>
 }
 

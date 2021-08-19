@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
-body,
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
   background-color: #98d9f0;
   opacity: 1;
   background: radial-gradient(
@@ -33,13 +31,6 @@ body {
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
 .mainBox {
   background-color: rgb(11, 148, 207, 0.7);
   display: flex;
@@ -51,7 +42,7 @@ body {
   border-radius: 30px;
 }
 
-#leftDiv {
+.leftDiv {
   transition: 1s;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -62,7 +53,7 @@ body {
   margin: 10%;
 }
 
-#loginArt {
+.loginArt {
   width: 100%;
   position: relative;
   left: 0;
@@ -72,7 +63,7 @@ body {
   padding: 0;
 }
 
-#rightDiv {
+.rightDiv {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 100%;
@@ -85,7 +76,7 @@ body {
   padding-top: 10%;
 }
 
-#logo {
+.logo {
   transition: 1s;
   height: 5rem;
   pointer-events: none;
@@ -106,16 +97,16 @@ body {
   bottom: 0;
 }
 
-label {
+.label {
   font-family: "Roboto", sans-serif;
 }
 
-form {
+.form {
   margin-top: 10%;
   width: 100%;
 }
 
-input {
+.input {
   transition: 1s;
   width: 80%;
   margin: 3% auto;
@@ -129,7 +120,7 @@ input {
   padding: 1%;
 }
 
-input:focus {
+.input:focus {
   transition: 1s;
   outline: none;
   border-color: #0b94cf;
@@ -155,7 +146,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 500px) {
-  #loginArt {
+  .loginArt {
     display: none;
   }
 }
@@ -170,24 +161,24 @@ input:focus {
     flex-direction: column;
   }
 
-  #logo {
+  .logo {
     margin: 0 auto;
   }
 
-  #leftDiv {
+  .leftDiv {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 0px;
     height: 20%;
   }
 
-  #rightDiv {
+  .rightDiv {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
   }
 
-  #loginArt {
+  .loginArt {
     display: none;
   }
 

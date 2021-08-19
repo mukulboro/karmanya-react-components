@@ -1,26 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #98d9f0;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, #98d9f0 20%, #98d9f0 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #98d9f0 20%, #98d9f0 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#78a23f 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #78a23f 0.8px, #98d9f0 0.8px) -0.4px 0;
-    background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
-}
-
-#holder{
-    width: 80%;
+.holder{
+    width: 100%;
     height: 100vh;
     margin: auto;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-content: center;
+    background-color: #98d9f0;
+    opacity: 1;
+    background: radial-gradient(
+      circle,
+      transparent 20%,
+      #98d9f0 20%,
+      #98d9f0 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #98d9f0 20%,
+        #98d9f0 80%,
+        transparent 80%,
+        transparent
+      )
+      10px 10px,
+    linear-gradient(#78a23f 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, #78a23f 0.8px, #98d9f0 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
-input{
+.input{
     transition: 1s;
     width: 97%;
     margin: 1rem auto;
@@ -34,7 +47,7 @@ input{
     padding: 1%;
 }
 
-input:focus{
+.input:focus{
     transition: 1s;
     outline: none;
     border-color: #0b94cf;
@@ -43,13 +56,13 @@ input:focus{
     font-size: 1.7rem;
 }
 
-h1{
+.title{
     font-family: "Roboto", sans-serif;
     font-size: 3rem;
     color: white;
 }
 
-#submit {
+.submit {
   width: 100%;
   margin: 2% auto;
   background-color: #78a23f;
@@ -61,6 +74,6 @@ h1{
   letter-spacing: 3px;
 }
 
-#submit:active {
+.submit:active {
   background-color: #a3c574;
 }

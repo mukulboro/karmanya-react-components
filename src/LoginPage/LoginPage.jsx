@@ -1,8 +1,9 @@
-import logo from "./images/karmanyaLogo.png"
-import loginImage from "./images/vector.svg"
+import logo from "../images/karmanyaLogo.png"
+import loginImage from "../images/vector.svg"
 import { useState } from "react"
 import axios from "axios"
 import qs from 'qs'
+import styles from "./LoginPage.module.css"
 
 export const LoginPage = ()=>{
     
@@ -26,37 +27,37 @@ export const LoginPage = ()=>{
         
     }
     return <>
-    <div className="container">
-        <section className="mainBox">
-        <div id="leftDiv">
-            <section className="leftDivContent">
-                <div className="logo">
-                    <img src={logo} alt="karmanya-logo" id="logo"/>
+    <div className={styles.container}>
+        <section className={styles.mainBox}>
+        <div className={styles.leftDiv}>
+            <section className={styles.leftDivContent}>
+                <div className={styles.logo}>
+                    <img src={logo} alt="karmanya-logo" className={styles.logo}/>
                 </div>
 
-                <div className="art">
-                    <img src={loginImage} alt="login-art" id="loginArt" />
+                <div className={styles.art}>
+                    <img src={loginImage} alt="login-art" className={styles.loginArt} />
                 </div>
 
-                <div className="quote">
+                <div className={styles.quote}>
                     "Dedication for self-less work"
                 </div>
             </section>
 
         </div>
 
-        <div id="rightDiv">
-           <section className="rightDivContent">
-               <div className="loginTitle">
+        <div className={styles.rightDiv}>
+           <section className={styles.rightDivContent}>
+               <div className={styles.loginTitle}>
                    LOGIN
                </div>
 
-                <form onSubmit={handleSubmit}>
-                    <label htmlFor="email">Username</label><br />
-                    <input value = {userName} type="text" name="email" required autoComplete="off" onChange={(e)=>setUsername(e.target.value)}/><br />
-                    <label htmlFor="password">Password</label><br />
-                    <input value = {password} type="password" name="password" onChange={(e)=>setPassword(e.target.value)}/><br />
-                    <button className="submit">LOGIN</button>
+                <form onSubmit={handleSubmit} className={styles.form}>
+                    <label className={styles.label} htmlFor="email">Username</label><br />
+                    <input className={styles.input} value = {userName} type="text" name="email" required autoComplete="off" onChange={(e)=>setUsername(e.target.value)}/><br />
+                    <label className={styles.label} htmlFor="password">Password</label><br />
+                    <input className={styles.input} value = {password} type="password" name="password" onChange={(e)=>setPassword(e.target.value)}/><br />
+                    <button className={styles.submit}>LOGIN</button>
                 </form>
            </section>
         </div>

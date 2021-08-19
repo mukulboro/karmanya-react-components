@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Header/header.css'
-import App from './Header/Header'
+import App from './PostCreation/CreatePost'
 
 
 ReactDOM.render(

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios';
+import styles from "./MainBlog.module.css"
 
 
 export const MainBlogPage = () => {
@@ -15,8 +16,8 @@ export const MainBlogPage = () => {
     useEffect(()=>getData(), [])
 
     return <>
-    <section id="mainHolder">
-        <h1>Blog</h1>
+    <section className={styles.mainHolder}>
+        <h1 className={styles.h1}>Blog</h1>
 
         {
             postData.map((post)=><BlogCard key={post.id} post={post} loading={loading}/>)
@@ -28,11 +29,11 @@ export const MainBlogPage = () => {
 
 const BlogCard = ({ post, loading })=>{
     if(loading){
-        return <h2>Loading...</h2>
+        return <h2 className={styles.loading}>Loading...</h2>
     }else{
-        return <section className="blogCard" style={{backgroundImage: `url(${post.imageURL})`}}>
-            <h1>{post.title}</h1>
-            <p>{post.body.replace(/<[^>]*>?/gm, '').slice(0, 65)}.....</p>
+        return <section className={styles.blogCard} style={{backgroundImage: `url(${post.imageURL})`}}>
+            <h1 className={styles.postTitle}>{post.title}</h1>
+            <p className={styles.postDescription}>{post.body.replace(/<[^>]*>?/gm, '').slice(0, 65)}.....</p>
         </section>
     }
 }

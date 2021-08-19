@@ -3,6 +3,7 @@ import MyEditor from 'ckeditor5-custom-build/build/ckeditor';
 import { useState } from 'react';
 import axios from 'axios';
 import qs from 'qs'
+import styles from "./Editor.module.css"
 
 const editorConfiguration = {
     toolbar: ['heading', "|" , 'bold', 'italic', 'underline' , 'alignment', 'link', "|" ,'undo', 'redo', 'numberedList', 'bulletedList', "|" , 'blockQuote' , 'insertTable' ]
@@ -32,11 +33,11 @@ export const Editor =({endpoint})=>{
         }
     }
     return<>
-    <div id="holder">
-        <h1>Create New Post</h1>
+    <div className={styles.holder}>
+        <h1 className={styles.title}>Create New Post</h1>
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Post Title" value={postTitle} onChange={(e)=>setPostTitle(e.target.value)} required/>
-            <input type="text" placeholder="Image Link" value={postImage} onChange={(e)=>setPostImage(e.target.value)} required/>
+            <input className={styles.input} type="text" placeholder="Post Title" value={postTitle} onChange={(e)=>setPostTitle(e.target.value)} required/>
+            <input className={styles.input} type="text" placeholder="Image Link" value={postImage} onChange={(e)=>setPostImage(e.target.value)} required/>
             <section id="textbox">
                 <CKEditor
                 editor={ MyEditor }
@@ -50,7 +51,7 @@ export const Editor =({endpoint})=>{
                 />
             </section>
 
-            <button id="submit">
+            <button className={styles.submit}>
                 SUBMIT
             </button>
         </form>

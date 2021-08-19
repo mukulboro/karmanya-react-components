@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #5CDB94;
-}
-
 #mainHolder{
     width: 100vw;
     height: 100vh;
@@ -17,10 +11,11 @@ body{
     align-content: center;
 }
 
-h1{
+.h1{
     font-family: 'Roboto', 'sans-serif';
     text-transform: uppercase;
     font-size: 3rem;
+    text-align: center;
     letter-spacing: 0.5rem;
     color: #063869;
 }
@@ -32,7 +27,7 @@ h1{
     padding: 3%;
     margin: 2% auto;
     width: 80%;
-    box-shadow: 10px 10px rgb(41, 188, 105, 0.7);
+    box-shadow: 10px 10px rgb(41, 188, 105, 0.5);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -43,15 +38,16 @@ h1{
     width: 85%;
 }
 
-.blogCard h1 {
+.postTitle {
     font-family: 'Roboto', 'sans-serif';
     color: white;
     letter-spacing: 0;
     text-transform: capitalize;
     text-align: left;
+    font-size: 3rem;
 }
 
-.blogCard p {
+.postDescription {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
@@ -59,12 +55,12 @@ h1{
 }
 
 @media only screen and (max-width: 768px) {
-    .blogCard h1{
+    .postTitleblogCard h1{
         font-size: 2rem;
         text-align: center;
     }
 
-    .blogCard p {
+    .postDescription {
         text-align: center;
     }
 }
